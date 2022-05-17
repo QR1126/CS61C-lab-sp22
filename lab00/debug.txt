@@ -1,0 +1,13 @@
+OSTYPE='linux-gnu'
+SH_VERSION='sh: 0: Illegal option --'
+GIT_VERSION='git version 2.25.1'
+PYTHON3_VERSION='Python 3.8.10'
+PYTHON_VERSION='Python 3.8.10'
+PY_VERSION='gen-debug.sh: line 8: py: command not found'
+GCC_VERSION='gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.'
+JAVA_VERSION='openjdk version "17.0.2" 2022-01-18
+OpenJDK Runtime Environment (build 17.0.2+8-Ubuntu-120.04)
+OpenJDK 64-Bit Server VM (build 17.0.2+8-Ubuntu-120.04, mixed mode, sharing)'
