@@ -101,7 +101,10 @@ main:
 # a1 is the address of the "output" array (defined above).
 f:
     # YOUR CODE GOES HERE!
-
+	addi t0, a0, 3 # t0 is the index of result
+    slli t1, t0, 2 # convert index to byte offset
+    add t1, t1, a1 # result address = offset + base address
+    lw a0, 0(t1)
     jr ra               # Always remember to jr ra after your function!
 
 # prints out one integer
