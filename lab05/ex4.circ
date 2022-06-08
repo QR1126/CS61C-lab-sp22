@@ -5,6 +5,8 @@
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
       <a name="appear" val="center"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
     </tool>
     <tool name="Pin">
       <a name="facing" val="north"/>
@@ -105,6 +107,11 @@
       <a name="locked" val="true"/>
       <a name="width" val="16"/>
     </comp>
+    <comp lib="0" loc="(260,180)" name="Splitter">
+      <a name="appear" val="center"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
     <comp lib="0" loc="(900,80)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
@@ -113,6 +120,55 @@
       <a name="output" val="true"/>
       <a name="width" val="16"/>
     </comp>
+    <comp lib="2" loc="(360,90)" name="Multiplexer">
+      <a name="enable" val="false"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="2" loc="(500,100)" name="Multiplexer">
+      <a name="enable" val="false"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="2" loc="(630,110)" name="Multiplexer">
+      <a name="enable" val="false"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="2" loc="(770,120)" name="Multiplexer">
+      <a name="enable" val="false"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp loc="(310,100)" name="rot1"/>
+    <comp loc="(450,110)" name="rot2"/>
+    <comp loc="(580,120)" name="rot4"/>
+    <comp loc="(720,130)" name="rot8"/>
+    <wire from="(220,160)" to="(220,180)"/>
+    <wire from="(220,180)" to="(260,180)"/>
+    <wire from="(220,80)" to="(230,80)"/>
+    <wire from="(230,100)" to="(250,100)"/>
+    <wire from="(230,80)" to="(230,100)"/>
+    <wire from="(230,80)" to="(330,80)"/>
+    <wire from="(280,160)" to="(340,160)"/>
+    <wire from="(280,170)" to="(480,170)"/>
+    <wire from="(280,180)" to="(610,180)"/>
+    <wire from="(280,190)" to="(750,190)"/>
+    <wire from="(310,100)" to="(330,100)"/>
+    <wire from="(340,110)" to="(340,160)"/>
+    <wire from="(360,90)" to="(390,90)"/>
+    <wire from="(390,90)" to="(390,110)"/>
+    <wire from="(390,90)" to="(470,90)"/>
+    <wire from="(450,110)" to="(470,110)"/>
+    <wire from="(480,120)" to="(480,170)"/>
+    <wire from="(500,100)" to="(520,100)"/>
+    <wire from="(520,100)" to="(520,120)"/>
+    <wire from="(520,100)" to="(600,100)"/>
+    <wire from="(580,120)" to="(600,120)"/>
+    <wire from="(610,130)" to="(610,180)"/>
+    <wire from="(630,110)" to="(660,110)"/>
+    <wire from="(660,110)" to="(660,130)"/>
+    <wire from="(660,110)" to="(740,110)"/>
+    <wire from="(720,130)" to="(740,130)"/>
+    <wire from="(750,140)" to="(750,190)"/>
+    <wire from="(770,120)" to="(900,120)"/>
+    <wire from="(900,80)" to="(900,120)"/>
   </circuit>
   <circuit name="rot1">
     <a name="appearance" val="custom"/>
