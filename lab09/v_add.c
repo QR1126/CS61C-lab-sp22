@@ -12,7 +12,7 @@ int main() {
 	// Test framework that sweeps the number of threads and times each run
 	double start_time, run_time;
 	int num_threads = omp_get_max_threads();	
-
+	//int num_threads = omp_get_thread_num();
 	double naive_max;
 	double adj_min = 100.0;
 	double chunks_min = 100.0;
